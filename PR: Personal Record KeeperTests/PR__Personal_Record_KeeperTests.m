@@ -3,7 +3,7 @@
 //  PR: Personal Record KeeperTests
 //
 //  Created by Michael Ginn on 4/19/14.
-//  Copyright (c) 2014 Quaritate Software. All rights reserved.
+//  Copyright (c) 2014 Michael Ginn. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
@@ -28,7 +28,7 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    //XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
 }
 
 @end

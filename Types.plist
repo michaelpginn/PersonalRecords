@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Triathlons</key>
+	<dict>
+		<key>00.Custom</key>
+		<string></string>
+		<key>01.Olympic (1.5km, 40km, 10km)</key>
+		<string>1hr 28min 4sec</string>
+		<key>02.Half Ironman (1.9km, 90km, 21.1km)</key>
+		<string>3hr 46min 2sec</string>
+		<key>03.Ironman (3.8km, 180.2km, </key>
+		<string>8hr 3min 56sec</string>
+	</dict>
+	<key>Swims</key>
+	<dict>
+		<key>00.Custom</key>
+		<string></string>
+		<key>01.50m Freestyle</key>
+		<string>20.91</string>
+		<key>02.100m Freestyle</key>
+		<string>46.91</string>
+		<key>03.200m Freestyle</key>
+		<string>1:42.00</string>
+		<key>04.400m Freestyle</key>
+		<string>3:40.07</string>
+		<key>05.800m Freestyle</key>
+		<string>7:32.12</string>
+		<key>06.1500m Freestyle</key>
+		<string>14:31.02</string>
+		<key>07.50m Backstroke</key>
+		<string>24.04</string>
+		<key>08.100m Backstroke</key>
+		<string>51.94</string>
+		<key>09.200m Backstroke</key>
+		<string>1:51.92</string>
+		<key>10.50m Breaststroke</key>
+		<string>26.67</string>
+		<key>11.100m Breaststroke</key>
+		<string>58.46</string>
+		<key>12.200m Breaststroke</key>
+		<string>2:07.01</string>
+		<key>13.50m Butterfly</key>
+		<string>22.43</string>
+		<key>14.100m Butterfly</key>
+		<string>49.82</string>
+		<key>15.200m Butterfly</key>
+		<string>1:51.51</string>
+	</dict>
+	<key>Runs</key>
+	<dict>
+		<key>00.Custom</key>
+		<string></string>
+		<key>01.100m</key>
+		<string>9.58s</string>
+		<key>02.200m</key>
+		<string>19.19s</string>
+		<key>03.400m</key>
+		<string>43.18</string>
+		<key>04.800m</key>
+		<string>1:40.91</string>
+		<key>05.1000m</key>
+		<string>2:11.96</string>
+		<key>06.1500m</key>
+		<string>3:26.00</string>
+		<key>07.Mile</key>
+		<string>3:43.13</string>
+		<key>08.2000m</key>
+		<string>4:44.79</string>
+		<key>09.3000m</key>
+		<string>7:20.67</string>
+		<key>10.5K</key>
+		<string>12:37.35</string>
+		<key>11.10K</key>
+		<string>26.17.53</string>
+		<key>12.10km</key>
+		<string>26:44</string>
+		<key>13.Half Marathon</key>
+		<string>58:23</string>
+		<key>14.15km</key>
+		<string>41:13</string>
+		<key>15.Marathon</key>
+		<string>2:03:23</string>
+	</dict>
+</dict>
+</plist>

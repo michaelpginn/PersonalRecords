@@ -7,22 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95054FEF19158A6C00CFEC7A /* Types.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95054FEE19158A6C00CFEC7A /* Types.plist */; };
+		95054FF9191872A500CFEC7A /* oddtopcell.png in Resources */ = {isa = PBXBuildFile; fileRef = 95054FF8191872A500CFEC7A /* oddtopcell.png */; };
+		95054FFB1918732200CFEC7A /* oddcell.png in Resources */ = {isa = PBXBuildFile; fileRef = 95054FFA1918732200CFEC7A /* oddcell.png */; };
+		95054FFD1918736F00CFEC7A /* evencell.png in Resources */ = {isa = PBXBuildFile; fileRef = 95054FFC1918736F00CFEC7A /* evencell.png */; };
+		9511AF3C1936A41100D65D28 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9511AF3B1936A41100D65D28 /* AboutViewController.m */; };
+		9599C3C2191B0A5900B64EB9 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9599C3C1191B0A5900B64EB9 /* Main_iPad.storyboard */; };
 		95B4CDF0190301910013A259 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B4CDEF190301910013A259 /* Foundation.framework */; };
 		95B4CDF2190301910013A259 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B4CDF1190301910013A259 /* CoreGraphics.framework */; };
 		95B4CDF4190301910013A259 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B4CDF3190301910013A259 /* UIKit.framework */; };
-		95B4CDFA190301910013A259 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95B4CDF8190301910013A259 /* InfoPlist.strings */; };
 		95B4CDFC190301910013A259 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B4CDFB190301910013A259 /* main.m */; };
 		95B4CE00190301910013A259 /* QRTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B4CDFF190301910013A259 /* QRTAppDelegate.m */; };
-		95B4CE03190301910013A259 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B4CE01190301910013A259 /* Main_iPhone.storyboard */; };
-		95B4CE06190301910013A259 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B4CE04190301910013A259 /* Main_iPad.storyboard */; };
-		95B4CE09190301910013A259 /* QRTFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B4CE08190301910013A259 /* QRTFirstViewController.m */; };
-		95B4CE0C190301910013A259 /* QRTSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B4CE0B190301910013A259 /* QRTSecondViewController.m */; };
 		95B4CE0E190301910013A259 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95B4CE0D190301910013A259 /* Images.xcassets */; };
 		95B4CE15190301910013A259 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B4CE14190301910013A259 /* XCTest.framework */; };
 		95B4CE16190301910013A259 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B4CDEF190301910013A259 /* Foundation.framework */; };
 		95B4CE17190301910013A259 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B4CDF3190301910013A259 /* UIKit.framework */; };
 		95B4CE1F190301910013A259 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95B4CE1D190301910013A259 /* InfoPlist.strings */; };
 		95B4CE21190301910013A259 /* PR__Personal_Record_KeeperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B4CE20190301910013A259 /* PR__Personal_Record_KeeperTests.m */; };
+		95B4CE32190302010013A259 /* running-large.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B4CE2C190302010013A259 /* running-large.png */; };
+		95B4CE33190302010013A259 /* running.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B4CE2D190302010013A259 /* running.png */; };
+		95B4CE34190302010013A259 /* swimming-large.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B4CE2E190302010013A259 /* swimming-large.png */; };
+		95B4CE35190302010013A259 /* swimming.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B4CE2F190302010013A259 /* swimming.png */; };
+		95B4CE38190302220013A259 /* photo-frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B4CE36190302220013A259 /* photo-frame.png */; };
+		95B4CE39190302220013A259 /* photo-frame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B4CE37190302220013A259 /* photo-frame@2x.png */; };
+		95B4CE3F190302890013A259 /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B4CE3E190302890013A259 /* RecordViewController.m */; };
+		95B4CE42190303A70013A259 /* RecordDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B4CE41190303A70013A259 /* RecordDetailViewController.m */; };
+		95B4CE441904A0E80013A259 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B4CE431904A0E80013A259 /* CoreData.framework */; };
+		95B4CE471904A13F0013A259 /* PRModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95B4CE451904A13F0013A259 /* PRModel.xcdatamodeld */; };
+		95B4CE4A1904ACB00013A259 /* AddRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B4CE491904ACB00013A259 /* AddRecordViewController.m */; };
+		95B4CE4D190588990013A259 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B4CE4C190588990013A259 /* Main_iPhone.storyboard */; };
+		95B4CE52190589810013A259 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B4CE51190589810013A259 /* TPKeyboardAvoidingScrollView.m */; };
+		95B4CE55190589CD0013A259 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B4CE54190589CD0013A259 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		95B4CE5819058D9C0013A259 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95B4CE5719058D9C0013A259 /* InfoPlist.strings */; };
+		95D05CFE193038340050A88C /* triangle-large.png in Resources */ = {isa = PBXBuildFile; fileRef = 95D05CFD193038340050A88C /* triangle-large.png */; };
+		95D05D001930383B0050A88C /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 95D05CFF1930383B0050A88C /* triangle.png */; };
+		95D05D13193041660050A88C /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D05D12193041660050A88C /* UIImage+ImageEffects.m */; };
+		95D05D151930EF8D0050A88C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D05D141930EF8D0050A88C /* QuartzCore.framework */; };
+		95D05D1B1930F0050050A88C /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D05D1A1930F0050050A88C /* Util.m */; };
+		95D05D1D193397090050A88C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D05D1C193397090050A88C /* MessageUI.framework */; };
+		95D05D21193398340050A88C /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 95D05D20193398340050A88C /* share.png */; };
+		95D05D231933A2050050A88C /* sharefilled.png in Resources */ = {isa = PBXBuildFile; fileRef = 95D05D221933A2050050A88C /* sharefilled.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,28 +60,58 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		95054FEE19158A6C00CFEC7A /* Types.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Types.plist; path = ../Types.plist; sourceTree = "<group>"; };
+		95054FF8191872A500CFEC7A /* oddtopcell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oddtopcell.png; sourceTree = "<group>"; };
+		95054FFA1918732200CFEC7A /* oddcell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oddcell.png; sourceTree = "<group>"; };
+		95054FFC1918736F00CFEC7A /* evencell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = evencell.png; sourceTree = "<group>"; };
+		9511AF3A1936A41100D65D28 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		9511AF3B1936A41100D65D28 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		9599C3C1191B0A5900B64EB9 /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main_iPad.storyboard; path = ../Main_iPad.storyboard; sourceTree = "<group>"; };
 		95B4CDEC190301910013A259 /* PR: Personal Record Keeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PR: Personal Record Keeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95B4CDEF190301910013A259 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		95B4CDF1190301910013A259 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		95B4CDF3190301910013A259 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		95B4CDF7190301910013A259 /* PR: Personal Record Keeper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PR: Personal Record Keeper-Info.plist"; sourceTree = "<group>"; };
-		95B4CDF9190301910013A259 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		95B4CDFB190301910013A259 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		95B4CDFD190301910013A259 /* PR: Personal Record Keeper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PR: Personal Record Keeper-Prefix.pch"; sourceTree = "<group>"; };
 		95B4CDFE190301910013A259 /* QRTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRTAppDelegate.h; sourceTree = "<group>"; };
 		95B4CDFF190301910013A259 /* QRTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRTAppDelegate.m; sourceTree = "<group>"; };
-		95B4CE02190301910013A259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		95B4CE05190301910013A259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		95B4CE07190301910013A259 /* QRTFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRTFirstViewController.h; sourceTree = "<group>"; };
-		95B4CE08190301910013A259 /* QRTFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRTFirstViewController.m; sourceTree = "<group>"; };
-		95B4CE0A190301910013A259 /* QRTSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRTSecondViewController.h; sourceTree = "<group>"; };
-		95B4CE0B190301910013A259 /* QRTSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRTSecondViewController.m; sourceTree = "<group>"; };
 		95B4CE0D190301910013A259 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		95B4CE13190301910013A259 /* PR: Personal Record KeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PR: Personal Record KeeperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95B4CE14190301910013A259 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		95B4CE1C190301910013A259 /* PR: Personal Record KeeperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PR: Personal Record KeeperTests-Info.plist"; sourceTree = "<group>"; };
 		95B4CE1E190301910013A259 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		95B4CE20190301910013A259 /* PR__Personal_Record_KeeperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PR__Personal_Record_KeeperTests.m; sourceTree = "<group>"; };
+		95B4CE2C190302010013A259 /* running-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "running-large.png"; sourceTree = "<group>"; };
+		95B4CE2D190302010013A259 /* running.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = running.png; sourceTree = "<group>"; };
+		95B4CE2E190302010013A259 /* swimming-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swimming-large.png"; sourceTree = "<group>"; };
+		95B4CE2F190302010013A259 /* swimming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swimming.png; sourceTree = "<group>"; };
+		95B4CE36190302220013A259 /* photo-frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-frame.png"; sourceTree = "<group>"; };
+		95B4CE37190302220013A259 /* photo-frame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-frame@2x.png"; sourceTree = "<group>"; };
+		95B4CE3D190302890013A259 /* RecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecordViewController.h; path = "PR: Personal Record Keeper/RecordViewController.h"; sourceTree = "<group>"; };
+		95B4CE3E190302890013A259 /* RecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = RecordViewController.m; path = "PR: Personal Record Keeper/RecordViewController.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		95B4CE40190303A70013A259 /* RecordDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordDetailViewController.h; sourceTree = "<group>"; };
+		95B4CE41190303A70013A259 /* RecordDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordDetailViewController.m; sourceTree = "<group>"; };
+		95B4CE431904A0E80013A259 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		95B4CE461904A13F0013A259 /* PRModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PRModel.xcdatamodel; sourceTree = "<group>"; };
+		95B4CE481904ACB00013A259 /* AddRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddRecordViewController.h; path = "PR: Personal Record Keeper/AddRecordViewController.h"; sourceTree = "<group>"; };
+		95B4CE491904ACB00013A259 /* AddRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = AddRecordViewController.m; path = "PR: Personal Record Keeper/AddRecordViewController.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		95B4CE4C190588990013A259 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
+		95B4CE50190589810013A259 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = SOURCE_ROOT; };
+		95B4CE51190589810013A259 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		95B4CE53190589CD0013A259 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = SOURCE_ROOT; };
+		95B4CE54190589CD0013A259 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		95B4CE5719058D9C0013A259 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		95D05CFD193038340050A88C /* triangle-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "triangle-large.png"; sourceTree = "<group>"; };
+		95D05CFF1930383B0050A88C /* triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangle.png; sourceTree = "<group>"; };
+		95D05D11193041660050A88C /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		95D05D12193041660050A88C /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		95D05D141930EF8D0050A88C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		95D05D191930F0050050A88C /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		95D05D1A1930F0050050A88C /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		95D05D1C193397090050A88C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		95D05D20193398340050A88C /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
+		95D05D221933A2050050A88C /* sharefilled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sharefilled.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +119,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95D05D1D193397090050A88C /* MessageUI.framework in Frameworks */,
+				95D05D151930EF8D0050A88C /* QuartzCore.framework in Frameworks */,
+				95B4CE441904A0E80013A259 /* CoreData.framework in Frameworks */,
 				95B4CDF2190301910013A259 /* CoreGraphics.framework in Frameworks */,
 				95B4CDF4190301910013A259 /* UIKit.framework in Frameworks */,
 				95B4CDF0190301910013A259 /* Foundation.framework in Frameworks */,
@@ -87,10 +144,24 @@
 		95B4CDE3190301910013A259 = {
 			isa = PBXGroup;
 			children = (
+				95B4CE4B1904ACBB0013A259 /* Controller */,
 				95B4CDF5190301910013A259 /* PR: Personal Record Keeper */,
 				95B4CE1A190301910013A259 /* PR: Personal Record KeeperTests */,
 				95B4CDEE190301910013A259 /* Frameworks */,
 				95B4CDED190301910013A259 /* Products */,
+				95D05D221933A2050050A88C /* sharefilled.png */,
+				95D05D20193398340050A88C /* share.png */,
+				95B4CE2C190302010013A259 /* running-large.png */,
+				95B4CE2D190302010013A259 /* running.png */,
+				95B4CE2E190302010013A259 /* swimming-large.png */,
+				95B4CE2F190302010013A259 /* swimming.png */,
+				95B4CE36190302220013A259 /* photo-frame.png */,
+				95B4CE37190302220013A259 /* photo-frame@2x.png */,
+				95054FF8191872A500CFEC7A /* oddtopcell.png */,
+				95054FFA1918732200CFEC7A /* oddcell.png */,
+				95054FFC1918736F00CFEC7A /* evencell.png */,
+				95D05CFF1930383B0050A88C /* triangle.png */,
+				95D05CFD193038340050A88C /* triangle-large.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +177,9 @@
 		95B4CDEE190301910013A259 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				95D05D1C193397090050A88C /* MessageUI.framework */,
+				95D05D141930EF8D0050A88C /* QuartzCore.framework */,
+				95B4CE431904A0E80013A259 /* CoreData.framework */,
 				95B4CDEF190301910013A259 /* Foundation.framework */,
 				95B4CDF1190301910013A259 /* CoreGraphics.framework */,
 				95B4CDF3190301910013A259 /* UIKit.framework */,
@@ -117,14 +191,12 @@
 		95B4CDF5190301910013A259 /* PR: Personal Record Keeper */ = {
 			isa = PBXGroup;
 			children = (
+				95054FEE19158A6C00CFEC7A /* Types.plist */,
 				95B4CDFE190301910013A259 /* QRTAppDelegate.h */,
 				95B4CDFF190301910013A259 /* QRTAppDelegate.m */,
-				95B4CE01190301910013A259 /* Main_iPhone.storyboard */,
-				95B4CE04190301910013A259 /* Main_iPad.storyboard */,
-				95B4CE07190301910013A259 /* QRTFirstViewController.h */,
-				95B4CE08190301910013A259 /* QRTFirstViewController.m */,
-				95B4CE0A190301910013A259 /* QRTSecondViewController.h */,
-				95B4CE0B190301910013A259 /* QRTSecondViewController.m */,
+				95B4CE4C190588990013A259 /* Main_iPhone.storyboard */,
+				9599C3C1191B0A5900B64EB9 /* Main_iPad.storyboard */,
+				95B4CE451904A13F0013A259 /* PRModel.xcdatamodeld */,
 				95B4CE0D190301910013A259 /* Images.xcassets */,
 				95B4CDF6190301910013A259 /* Supporting Files */,
 			);
@@ -135,8 +207,8 @@
 			isa = PBXGroup;
 			children = (
 				95B4CDF7190301910013A259 /* PR: Personal Record Keeper-Info.plist */,
-				95B4CDF8190301910013A259 /* InfoPlist.strings */,
 				95B4CDFB190301910013A259 /* main.m */,
+				95B4CE5719058D9C0013A259 /* InfoPlist.strings */,
 				95B4CDFD190301910013A259 /* PR: Personal Record Keeper-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -160,6 +232,37 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		95B4CE4B1904ACBB0013A259 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9511AF3A1936A41100D65D28 /* AboutViewController.h */,
+				9511AF3B1936A41100D65D28 /* AboutViewController.m */,
+				95D05D191930F0050050A88C /* Util.h */,
+				95D05D1A1930F0050050A88C /* Util.m */,
+				95D05D11193041660050A88C /* UIImage+ImageEffects.h */,
+				95D05D12193041660050A88C /* UIImage+ImageEffects.m */,
+				95B4CE3D190302890013A259 /* RecordViewController.h */,
+				95B4CE3E190302890013A259 /* RecordViewController.m */,
+				95B4CE40190303A70013A259 /* RecordDetailViewController.h */,
+				95B4CE41190303A70013A259 /* RecordDetailViewController.m */,
+				95B4CE481904ACB00013A259 /* AddRecordViewController.h */,
+				95B4CE491904ACB00013A259 /* AddRecordViewController.m */,
+				95B4CE56190589D50013A259 /* TPKeyboardScrollView */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		95B4CE56190589D50013A259 /* TPKeyboardScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				95B4CE50190589810013A259 /* TPKeyboardAvoidingScrollView.h */,
+				95B4CE51190589810013A259 /* TPKeyboardAvoidingScrollView.m */,
+				95B4CE53190589CD0013A259 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				95B4CE54190589CD0013A259 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			name = TPKeyboardScrollView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,6 +272,7 @@
 			buildPhases = (
 				95B4CDE8190301910013A259 /* Sources */,
 				95B4CDE9190301910013A259 /* Frameworks */,
+				9511AF391936A34700D65D28 /* ShellScript */,
 				95B4CDEA190301910013A259 /* Resources */,
 			);
 			buildRules = (
@@ -206,7 +310,7 @@
 			attributes = {
 				CLASSPREFIX = QRT;
 				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "Quaritate Software";
+				ORGANIZATIONNAME = "Michael Ginn";
 				TargetAttributes = {
 					95B4CE12190301910013A259 = {
 						TestTargetID = 95B4CDEB190301910013A259;
@@ -237,10 +341,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95B4CE06190301910013A259 /* Main_iPad.storyboard in Resources */,
 				95B4CE0E190301910013A259 /* Images.xcassets in Resources */,
-				95B4CE03190301910013A259 /* Main_iPhone.storyboard in Resources */,
-				95B4CDFA190301910013A259 /* InfoPlist.strings in Resources */,
+				95D05D21193398340050A88C /* share.png in Resources */,
+				95B4CE5819058D9C0013A259 /* InfoPlist.strings in Resources */,
+				95D05D231933A2050050A88C /* sharefilled.png in Resources */,
+				95B4CE4D190588990013A259 /* Main_iPhone.storyboard in Resources */,
+				95054FF9191872A500CFEC7A /* oddtopcell.png in Resources */,
+				95B4CE34190302010013A259 /* swimming-large.png in Resources */,
+				95D05D001930383B0050A88C /* triangle.png in Resources */,
+				95B4CE32190302010013A259 /* running-large.png in Resources */,
+				95B4CE35190302010013A259 /* swimming.png in Resources */,
+				95B4CE39190302220013A259 /* photo-frame@2x.png in Resources */,
+				95D05CFE193038340050A88C /* triangle-large.png in Resources */,
+				95054FFB1918732200CFEC7A /* oddcell.png in Resources */,
+				95B4CE38190302220013A259 /* photo-frame.png in Resources */,
+				95054FFD1918736F00CFEC7A /* evencell.png in Resources */,
+				9599C3C2191B0A5900B64EB9 /* Main_iPad.storyboard in Resources */,
+				95054FEF19158A6C00CFEC7A /* Types.plist in Resources */,
+				95B4CE33190302010013A259 /* running.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,15 +372,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9511AF391936A34700D65D28 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		95B4CDE8190301910013A259 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95B4CE09190301910013A259 /* QRTFirstViewController.m in Sources */,
 				95B4CE00190301910013A259 /* QRTAppDelegate.m in Sources */,
-				95B4CE0C190301910013A259 /* QRTSecondViewController.m in Sources */,
+				95B4CE52190589810013A259 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				95B4CE471904A13F0013A259 /* PRModel.xcdatamodeld in Sources */,
+				95B4CE55190589CD0013A259 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				95B4CDFC190301910013A259 /* main.m in Sources */,
+				95D05D1B1930F0050050A88C /* Util.m in Sources */,
+				95D05D13193041660050A88C /* UIImage+ImageEffects.m in Sources */,
+				95B4CE4A1904ACB00013A259 /* AddRecordViewController.m in Sources */,
+				9511AF3C1936A41100D65D28 /* AboutViewController.m in Sources */,
+				95B4CE3F190302890013A259 /* RecordViewController.m in Sources */,
+				95B4CE42190303A70013A259 /* RecordDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,30 +426,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		95B4CDF8190301910013A259 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				95B4CDF9190301910013A259 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		95B4CE01190301910013A259 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				95B4CE02190301910013A259 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		95B4CE04190301910013A259 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				95B4CE05190301910013A259 /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
 		95B4CE1D190301910013A259 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -477,6 +594,7 @@
 				95B4CE26190301910013A259 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		95B4CE27190301910013A259 /* Build configuration list for PBXNativeTarget "PR: Personal Record KeeperTests" */ = {
 			isa = XCConfigurationList;
@@ -485,8 +603,23 @@
 				95B4CE29190301910013A259 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		95B4CE451904A13F0013A259 /* PRModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				95B4CE461904A13F0013A259 /* PRModel.xcdatamodel */,
+			);
+			currentVersion = 95B4CE461904A13F0013A259 /* PRModel.xcdatamodel */;
+			name = PRModel.xcdatamodeld;
+			path = ../PRModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 95B4CDE4190301910013A259 /* Project object */;
 }
