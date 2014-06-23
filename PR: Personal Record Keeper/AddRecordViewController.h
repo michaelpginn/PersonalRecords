@@ -27,6 +27,7 @@
 
 @property (nonatomic, strong) NSString *sentActivity;
 @property (nonatomic, strong)NSManagedObject *record;
+@property (nonatomic, strong)NSString *sentLength;
 @property (nonatomic, strong)UIImage *bgimage;
 @property (weak, nonatomic) IBOutlet UINavigationBar *navigationBar;
 

@@ -28,8 +28,7 @@
 @synthesize runKeys;
 @synthesize swimKeys;
 @synthesize triathlonKeys;
-@synthesize worldRecordButton;
-@synthesize shareButton;
+@synthesize toolBar;
 
 - (NSManagedObjectContext *)managedObjectContext
 {
@@ -55,17 +54,15 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    if ([MFMailComposeViewController canSendMail])
-		shareButton.enabled = YES;
 }
 - (void)viewDidAppear:(BOOL)animated
 {
-    
     self.title = [record valueForKey:@"name"];
     self.recordTime.text = [record valueForKey:@"time"];
     self.recordLocation.text = [record valueForKey:@"location"];
     self.recordDate.text = [NSDateFormatter localizedStringFromDate:[record valueForKey:@"date"] dateStyle:NSDateFormatterLongStyle timeStyle:NSDateFormatterNoStyle];
     self.recordPhoto.image = [UIImage imageWithData:[record valueForKey:@"image"]];
+    
     //get information from plist
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Types" ofType:@"plist"];
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
@@ -96,16 +93,21 @@
         [triathlonKeys addObject:newStr];
     }
     //show world record
+    NSArray *toolItems = [toolBar items];
+    UIButton *worldRecordButton = toolItems[3];
     NSString *recordName = [record valueForKey:@"name"];
+    [self.navigationItem.rightBarButtonItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor clearColor]}
+                                                          forState:UIControlStateDisabled];
+    worldRecordButton.enabled = false;
     if ([runKeys containsObject:recordName]){
-        worldRecordButton.hidden = false;
+        worldRecordButton.enabled = true;
         NSUInteger index;
         index = [runKeys indexOfObject:recordName];
-        NSString *runLength = [runLengths objectAtIndex:(index+1)];
+        NSString *runLength = [runLengths objectAtIndex:(index)];
         worldRecord.text = [runDict objectForKey:runLength];
     }
     if ([swimKeys containsObject:[record valueForKey:@"name"]]){
-        worldRecordButton.hidden = false;
+        worldRecordButton.enabled = true;
         NSUInteger index;
         index = [swimKeys indexOfObject:recordName];
         NSString *swimLength = [swimLengths objectAtIndex:(index+1)];
@@ -113,7 +115,7 @@
         
     }
     if ([triathlonKeys containsObject:[record valueForKey:@"name"]]){
-        worldRecordButton.hidden = false;
+        worldRecordButton.enabled = true;
         NSUInteger index;
         index = [triathlonKeys indexOfObject:recordName];
         NSString *triathlonLength = [triathlonLengths objectAtIndex:(index+1)];
@@ -129,30 +131,17 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-
-*/
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if([[segue identifier] isEqualToString:@"updateRecord"]){
-        AddRecordViewController *destViewController = segue.destinationViewController;
-        destViewController.record = self.record;
-        destViewController.bgimage = [Util captureTotalView:self.view];
-        destViewController.sentActivity = [[self.record entity] name];
-    }
-}
 -(IBAction)showWorldRecord:(id)sender{
-    if ([worldRecordButton.titleLabel.text  isEqual: @"View World Record"]){
+    NSArray *toolItems = [toolBar items];
+    UIBarButtonItem *worldRecordButton = toolItems[3];
+    if ([worldRecordButton.title  isEqualToString:@"View World Record"]){
     worldRecord.alpha = 0;
     worldRecord.hidden = false;
-    
     [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionCurveEaseIn
                      animations:^{ worldRecord.alpha = 1;}
                      completion:nil];
-    [worldRecordButton setTitle:@"Hide World Record" forState:UIControlStateNormal];
+        [worldRecordButton setTitle:@"Hide World Record"];
     } else{
         worldRecord.alpha = 1;
         
@@ -160,12 +149,11 @@
                          animations:^{ worldRecord.alpha = 0;}
                          completion:nil];
         worldRecord.hidden = true;
-        [worldRecordButton setTitle:@"View World Record" forState:UIControlStateNormal];
+        [worldRecordButton setTitle:@"View World Record"];
     }
 }
 
 -(IBAction)share:(id)sender{
-    [shareButton setBackgroundImage:[Util imageWithColor:[UIColor colorWithRed:51/255.0 green:221/255.0 blue:236/255.0 alpha:1.0]] forState:UIControlStateHighlighted];
     MFMailComposeViewController *emailController = [[MFMailComposeViewController alloc] init];
     emailController.mailComposeDelegate = self;
 	[emailController setSubject:[NSString stringWithFormat:@"My new %@ record", self.title]];
@@ -177,17 +165,33 @@
     
 	[self presentViewController:emailController animated:YES completion:nil];
 }
--(IBAction)shareHover:(id)sender{
-    [shareButton setBackgroundImage:[UIImage imageNamed:@"sharefilled"] forState:UIControlStateHighlighted];
-}
-
-- (IBAction)shareOff:(id)sender {
-    [shareButton setBackgroundImage:[UIImage imageNamed:@"share"] forState:UIControlStateHighlighted];
-
-}
 
 - (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error {
 	[self becomeFirstResponder];
 	[self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([[segue identifier] isEqualToString:@"updateRecord"]){
+        AddRecordViewController *destViewController = segue.destinationViewController;
+        destViewController.record = self.record;
+        destViewController.bgimage = [Util captureTotalView:self.view];
+        destViewController.sentActivity = [[self.record entity] name];
+    }
+    if([[segue identifier] isEqualToString:@"newTimeForLength"]){
+        AddRecordViewController *destViewController = segue.destinationViewController;
+        destViewController.sentActivity = [[self.record entity] name];
+        destViewController.sentLength = [record valueForKey:@"name"];
+        destViewController.bgimage = [Util captureTotalView:self.view];
+        
+    }
+    if([[segue identifier] isEqualToString:@"historyView"]){
+        HistoryTableViewController *destViewController = segue.destinationViewController;
+        destViewController.recordName = [self.record valueForKey:@"name"];
+        destViewController.bgimage = [Util captureTotalView:self.view];
+    }
 }
 @end

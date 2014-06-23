@@ -23,7 +23,7 @@
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:38/255.0 green:166/255.0 blue:176/255.0 alpha:1.0]];
     [[UINavigationBar appearance] setTintColor:[UIColor blackColor]];
     NSDictionary *navbarTitleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
-                                               [UIColor whiteColor],NSForegroundColorAttributeName, nil];
+                                               [UIColor whiteColor],NSForegroundColorAttributeName,nil];
     [[UINavigationBar appearance] setTitleTextAttributes:navbarTitleTextAttributes];
     return YES;
 }
@@ -47,7 +47,7 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was 'ly in the background, optionally refresh the user interface.
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

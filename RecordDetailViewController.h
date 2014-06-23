@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AddRecordViewController.h"
+#import "HistoryTableViewController.h"
 #import <MessageUI/MessageUI.h>
 #import "Util.h"
 
@@ -26,11 +27,7 @@
 @property (strong, nonatomic) NSMutableArray* runKeys;
 @property (strong, nonatomic) NSMutableArray* swimKeys;
 @property (strong, nonatomic) NSMutableArray* triathlonKeys;
-@property(nonatomic,retain) IBOutlet UIButton* worldRecordButton;
-
+@property(nonatomic, retain) IBOutlet UIToolbar *toolBar;
 - (IBAction)share:(id)sender;
-- (IBAction)shareHover:(id)sender;
-- (IBAction)shareOff:(id)sender;
-@property(nonatomic,retain) IBOutlet UIButton* shareButton;
 
 @end

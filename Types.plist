@@ -6,11 +6,11 @@
 	<dict>
 		<key>00.Custom</key>
 		<string></string>
-		<key>01.Olympic (1.5km, 40km, 10km)</key>
+		<key>01.Olympic</key>
 		<string>1hr 28min 4sec</string>
-		<key>02.Half Ironman (1.9km, 90km, 21.1km)</key>
+		<key>02.Half Ironman</key>
 		<string>3hr 46min 2sec</string>
-		<key>03.Ironman (3.8km, 180.2km, </key>
+		<key>03.Ironman</key>
 		<string>8hr 3min 56sec</string>
 	</dict>
 	<key>Swims</key>

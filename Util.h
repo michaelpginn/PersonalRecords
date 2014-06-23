@@ -10,6 +10,6 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface Util : NSObject
-+(UIImage *)captureTotalView:(UIView *)view;
++(UIImage *)captureTotalView:(UIView *)view ;
 +(UIImage *)imageWithColor:(UIColor *)color;
 @end

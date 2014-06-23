@@ -28,8 +28,6 @@
 		95B4CE33190302010013A259 /* running.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B4CE2D190302010013A259 /* running.png */; };
 		95B4CE34190302010013A259 /* swimming-large.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B4CE2E190302010013A259 /* swimming-large.png */; };
 		95B4CE35190302010013A259 /* swimming.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B4CE2F190302010013A259 /* swimming.png */; };
-		95B4CE38190302220013A259 /* photo-frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B4CE36190302220013A259 /* photo-frame.png */; };
-		95B4CE39190302220013A259 /* photo-frame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95B4CE37190302220013A259 /* photo-frame@2x.png */; };
 		95B4CE3F190302890013A259 /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B4CE3E190302890013A259 /* RecordViewController.m */; };
 		95B4CE42190303A70013A259 /* RecordDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B4CE41190303A70013A259 /* RecordDetailViewController.m */; };
 		95B4CE441904A0E80013A259 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B4CE431904A0E80013A259 /* CoreData.framework */; };
@@ -45,8 +43,7 @@
 		95D05D151930EF8D0050A88C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D05D141930EF8D0050A88C /* QuartzCore.framework */; };
 		95D05D1B1930F0050050A88C /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D05D1A1930F0050050A88C /* Util.m */; };
 		95D05D1D193397090050A88C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D05D1C193397090050A88C /* MessageUI.framework */; };
-		95D05D21193398340050A88C /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 95D05D20193398340050A88C /* share.png */; };
-		95D05D231933A2050050A88C /* sharefilled.png in Resources */ = {isa = PBXBuildFile; fileRef = 95D05D221933A2050050A88C /* sharefilled.png */; };
+		95D1320C195390DB006B75F7 /* HistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D1320B195390DB006B75F7 /* HistoryTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,8 +83,6 @@
 		95B4CE2D190302010013A259 /* running.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = running.png; sourceTree = "<group>"; };
 		95B4CE2E190302010013A259 /* swimming-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swimming-large.png"; sourceTree = "<group>"; };
 		95B4CE2F190302010013A259 /* swimming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swimming.png; sourceTree = "<group>"; };
-		95B4CE36190302220013A259 /* photo-frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-frame.png"; sourceTree = "<group>"; };
-		95B4CE37190302220013A259 /* photo-frame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-frame@2x.png"; sourceTree = "<group>"; };
 		95B4CE3D190302890013A259 /* RecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecordViewController.h; path = "PR: Personal Record Keeper/RecordViewController.h"; sourceTree = "<group>"; };
 		95B4CE3E190302890013A259 /* RecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = RecordViewController.m; path = "PR: Personal Record Keeper/RecordViewController.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		95B4CE40190303A70013A259 /* RecordDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordDetailViewController.h; sourceTree = "<group>"; };
@@ -110,8 +105,8 @@
 		95D05D191930F0050050A88C /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 		95D05D1A1930F0050050A88C /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
 		95D05D1C193397090050A88C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		95D05D20193398340050A88C /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
-		95D05D221933A2050050A88C /* sharefilled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sharefilled.png; sourceTree = "<group>"; };
+		95D1320A195390DB006B75F7 /* HistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoryTableViewController.h; path = "PR: Personal Record Keeper/HistoryTableViewController.h"; sourceTree = "<group>"; };
+		95D1320B195390DB006B75F7 /* HistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryTableViewController.m; path = "PR: Personal Record Keeper/HistoryTableViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,19 +139,16 @@
 		95B4CDE3190301910013A259 = {
 			isa = PBXGroup;
 			children = (
+				95D1320D19548D5F006B75F7 /* Utilities */,
 				95B4CE4B1904ACBB0013A259 /* Controller */,
 				95B4CDF5190301910013A259 /* PR: Personal Record Keeper */,
 				95B4CE1A190301910013A259 /* PR: Personal Record KeeperTests */,
 				95B4CDEE190301910013A259 /* Frameworks */,
 				95B4CDED190301910013A259 /* Products */,
-				95D05D221933A2050050A88C /* sharefilled.png */,
-				95D05D20193398340050A88C /* share.png */,
 				95B4CE2C190302010013A259 /* running-large.png */,
 				95B4CE2D190302010013A259 /* running.png */,
 				95B4CE2E190302010013A259 /* swimming-large.png */,
 				95B4CE2F190302010013A259 /* swimming.png */,
-				95B4CE36190302220013A259 /* photo-frame.png */,
-				95B4CE37190302220013A259 /* photo-frame@2x.png */,
 				95054FF8191872A500CFEC7A /* oddtopcell.png */,
 				95054FFA1918732200CFEC7A /* oddcell.png */,
 				95054FFC1918736F00CFEC7A /* evencell.png */,
@@ -235,18 +227,16 @@
 		95B4CE4B1904ACBB0013A259 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9511AF3A1936A41100D65D28 /* AboutViewController.h */,
-				9511AF3B1936A41100D65D28 /* AboutViewController.m */,
-				95D05D191930F0050050A88C /* Util.h */,
-				95D05D1A1930F0050050A88C /* Util.m */,
-				95D05D11193041660050A88C /* UIImage+ImageEffects.h */,
-				95D05D12193041660050A88C /* UIImage+ImageEffects.m */,
 				95B4CE3D190302890013A259 /* RecordViewController.h */,
 				95B4CE3E190302890013A259 /* RecordViewController.m */,
 				95B4CE40190303A70013A259 /* RecordDetailViewController.h */,
 				95B4CE41190303A70013A259 /* RecordDetailViewController.m */,
 				95B4CE481904ACB00013A259 /* AddRecordViewController.h */,
 				95B4CE491904ACB00013A259 /* AddRecordViewController.m */,
+				95D1320A195390DB006B75F7 /* HistoryTableViewController.h */,
+				95D1320B195390DB006B75F7 /* HistoryTableViewController.m */,
+				9511AF3A1936A41100D65D28 /* AboutViewController.h */,
+				9511AF3B1936A41100D65D28 /* AboutViewController.m */,
 				95B4CE56190589D50013A259 /* TPKeyboardScrollView */,
 			);
 			name = Controller;
@@ -261,6 +251,17 @@
 				95B4CE54190589CD0013A259 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
 			);
 			name = TPKeyboardScrollView;
+			sourceTree = "<group>";
+		};
+		95D1320D19548D5F006B75F7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				95D05D191930F0050050A88C /* Util.h */,
+				95D05D1A1930F0050050A88C /* Util.m */,
+				95D05D11193041660050A88C /* UIImage+ImageEffects.h */,
+				95D05D12193041660050A88C /* UIImage+ImageEffects.m */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,10 +309,13 @@
 		95B4CDE4190301910013A259 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = QRT;
+				CLASSPREFIX = MG;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Michael Ginn";
 				TargetAttributes = {
+					95B4CDEB190301910013A259 = {
+						DevelopmentTeam = UB6P2G6766;
+					};
 					95B4CE12190301910013A259 = {
 						TestTargetID = 95B4CDEB190301910013A259;
 					};
@@ -342,19 +346,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				95B4CE0E190301910013A259 /* Images.xcassets in Resources */,
-				95D05D21193398340050A88C /* share.png in Resources */,
 				95B4CE5819058D9C0013A259 /* InfoPlist.strings in Resources */,
-				95D05D231933A2050050A88C /* sharefilled.png in Resources */,
 				95B4CE4D190588990013A259 /* Main_iPhone.storyboard in Resources */,
 				95054FF9191872A500CFEC7A /* oddtopcell.png in Resources */,
 				95B4CE34190302010013A259 /* swimming-large.png in Resources */,
 				95D05D001930383B0050A88C /* triangle.png in Resources */,
 				95B4CE32190302010013A259 /* running-large.png in Resources */,
 				95B4CE35190302010013A259 /* swimming.png in Resources */,
-				95B4CE39190302220013A259 /* photo-frame@2x.png in Resources */,
 				95D05CFE193038340050A88C /* triangle-large.png in Resources */,
 				95054FFB1918732200CFEC7A /* oddcell.png in Resources */,
-				95B4CE38190302220013A259 /* photo-frame.png in Resources */,
 				95054FFD1918736F00CFEC7A /* evencell.png in Resources */,
 				9599C3C2191B0A5900B64EB9 /* Main_iPad.storyboard in Resources */,
 				95054FEF19158A6C00CFEC7A /* Types.plist in Resources */,
@@ -393,6 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95D1320C195390DB006B75F7 /* HistoryTableViewController.m in Sources */,
 				95B4CE00190301910013A259 /* QRTAppDelegate.m in Sources */,
 				95B4CE52190589810013A259 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				95B4CE471904A13F0013A259 /* PRModel.xcdatamodeld in Sources */,
@@ -473,6 +474,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Debug;
 		};
@@ -514,10 +516,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PR: Personal Record Keeper/PR: Personal Record Keeper-Prefix.pch";
 				INFOPLIST_FILE = "PR: Personal Record Keeper/PR: Personal Record Keeper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PR: Personal Record Keeper-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -527,10 +537,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PR: Personal Record Keeper/PR: Personal Record Keeper-Prefix.pch";
 				INFOPLIST_FILE = "PR: Personal Record Keeper/PR: Personal Record Keeper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PR: Personal Record Keeper-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

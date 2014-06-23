@@ -7,8 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIImage+ImageEffects.h"
+#import <MessageUI/MessageUI.h>
 
-@interface AboutViewController : UIViewController
+
+@interface AboutViewController : UIViewController <MFMailComposeViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *versionLabel;
-
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+- (IBAction)featureRequest:(id)sender;
+- (IBAction)support:(id)sender;
+- (IBAction)shareByEmail:(id)sender;
+- (IBAction)done:(id)sender;
+- (IBAction)rate:(id)sender;
+@property (nonatomic, strong)UIImage *bgimage;
 @end

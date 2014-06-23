@@ -28,6 +28,7 @@
 @synthesize swimLengths;
 @synthesize triathlonLengths;
 @synthesize bgimage;
+@synthesize sentLength;
 
 @synthesize pickerView;
 
@@ -44,16 +45,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //blurred background
     bgimage = [bgimage applyDarkEffect];
     UIImageView *blurImageView = [[UIImageView alloc] initWithImage:bgimage];
     [self.view insertSubview:blurImageView belowSubview:self.scrollView];
     [scrollView setBackgroundColor:[UIColor clearColor]];
+    //navigation bar style
     [self.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     [self.navigationBar setShadowImage:[UIImage new]];
     [self.navigationBar setTranslucent:YES];
     [self.navigationBar setTintColor:[UIColor whiteColor]];
-    datePicker.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.3]; 
-    // Do any additional setup after loading the view.
+    //datePicker style
+    datePicker.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.3];
+    //set activtySegment selected
     int indexNum = 0;
     if ([sentActivity  isEqualToString:@"Run"]){
         indexNum = 0;
@@ -63,7 +67,8 @@
         indexNum = 2;
     }
     [activitySegment setSelectedSegmentIndex:indexNum];
-    if (self.record) {
+    
+    if (self.record) { //record exists, fill fields with it
         [self.nameTextField setText:[self.record valueForKey:@"name"]];
         [self.timeTextField setText:[self.record valueForKey:@"time"]];
         [self.datePicker setDate:[self.record valueForKey:@"date"]];
@@ -71,16 +76,24 @@
         UIImage *image = [UIImage imageWithData:[self.record valueForKey:@"image"]];
         [[self imageView] setImage:image];
     }
+    if (self.sentLength) { //creating new record with same name
+        [self.nameTextField setText:self.sentLength];
+    }
+    
+    //initialize pickerView keyboard
     pickerView = [[UIPickerView alloc] init];
     pickerView.dataSource = self;
     pickerView.delegate = self;
     self.nameTextField.inputView = pickerView;
     
+    //get types from plist
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Types" ofType:@"plist"];
+    //dict holds all of plist
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
-    NSDictionary *runDict = [dict objectForKey:@"Runs"];
-    NSDictionary *swimDict = [dict objectForKey:@"Swims"];
-    NSDictionary *triathlonDict = [dict objectForKey:@"Triathlons"];
+    NSDictionary *runDict = [dict objectForKey:@"Runs"]; //holds runs
+    NSDictionary *swimDict = [dict objectForKey:@"Swims"]; //holds swims
+    NSDictionary *triathlonDict = [dict objectForKey:@"Triathlons"]; //holds triathlons
+    //sort by number
     runLengths = [[runDict allKeys] sortedArrayUsingSelector:@selector(localizedStandardCompare:)];
     swimLengths = [[swimDict allKeys] sortedArrayUsingSelector:@selector(localizedStandardCompare:)];
     triathlonLengths = [[triathlonDict allKeys] sortedArrayUsingSelector:@selector(localizedStandardCompare:)];
@@ -134,7 +147,6 @@
             entity = [NSEntityDescription entityForName:@"Swim" inManagedObjectContext:context];
             break;
     }
- [NSEntityDescription entityForName:@"YourEntityName" inManagedObjectContext:context];
     [request setEntity:entity];
     // retrive the objects with a given value for a certain property
     NSPredicate *predicate = [NSPredicate predicateWithFormat: @"name == %@", self.nameTextField.text];
@@ -142,16 +154,8 @@
     NSError *error = nil;
     NSArray *result = [context executeFetchRequest:request error:&error];
 
-    if (self.record) {
-        if ([self.record valueForKey:@"time"]!=self.timeTextField.text){
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Congratulations!"
-                                                            message:@"You've beat your previous record!"
-                                                           delegate:nil
-                                                  cancelButtonTitle:@"OK"
-                                                  otherButtonTitles:nil];
-            [alert show];
-
-        }
+    if (self.record)  //record already exists
+    {
         [self.record setValue:self.nameTextField.text forKey:@"name"];
         [self.record setValue:self.timeTextField.text forKey:@"time"];
         [self.record setValue:self.datePicker.date forKey:@"date"];
@@ -182,6 +186,20 @@
     }else if([result count]!=0)
     {
         //record with name already exists, so overwrite it.
+        //first save old record to Previous Records
+        NSManagedObject *oldRecord;
+        oldRecord = [NSEntityDescription insertNewObjectForEntityForName:@"Previous" inManagedObjectContext:context];
+        self.record = result[0];
+        [oldRecord setValue:[[self.record entity] name] forKey:@"activity"];
+        [oldRecord setValue:[self.record valueForKey:@"name"] forKey:@"name"];
+        [oldRecord setValue:[self.record valueForKey:@"time"] forKey:@"time"];
+        [oldRecord setValue:[self.record valueForKey:@"date"] forKey:@"date"];
+        [oldRecord setValue:[self.record valueForKey:@"location"] forKey:@"location"];
+        [oldRecord setValue:[self.record valueForKey:@"image"] forKey:@"image"];
+        if (![context save:&error]) {
+            NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+        }
+        //now overwrite
         self.record = [result objectAtIndex:0];
         [self.record setValue:self.timeTextField.text forKey:@"time"];
         [self.record setValue:self.datePicker.date forKey:@"date"];

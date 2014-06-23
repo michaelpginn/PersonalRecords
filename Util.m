@@ -9,11 +9,10 @@
 #import "Util.h"
 
 @implementation Util
-+(UIImage *)captureTotalView:(UIView *)view {
++(UIImage *)captureTotalView:(UIView *)view{
     CALayer *layer = [[UIApplication sharedApplication] keyWindow].layer;
     CGFloat scale = [UIScreen mainScreen].scale;
     UIGraphicsBeginImageContextWithOptions(layer.frame.size, NO, scale);
-    
     [layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage *screenshot = UIGraphicsGetImageFromCurrentImageContext();
     return screenshot;
@@ -31,4 +30,5 @@
     
     return image;
 }
+
 @end
