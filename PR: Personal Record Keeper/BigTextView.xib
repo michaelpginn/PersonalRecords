@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="idCellBigTextView" rowHeight="275" id="dHr-1g-GFn" userLabel="idCellBigTextView" customClass="CustomCell" customModule="PR__Personal_Record_Keeper" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="270"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dHr-1g-GFn" id="67c-yg-mpT">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="269.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9D-pS-4IH">
+                        <rect key="frame" x="110" y="224" width="100" height="35"/>
+                        <color key="backgroundColor" red="0.25098039220000001" green="0.30588235289999999" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="MZB-WQ-6kO"/>
+                            <constraint firstAttribute="width" constant="100" id="Sp5-Rd-6yc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <state key="normal" title="Set">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="setNoteTextWithSender:" destination="dHr-1g-GFn" eventType="touchUpInside" id="gec-2X-yZP"/>
+                        </connections>
+                    </button>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vzp-xx-RDr">
+                        <rect key="frame" x="16" y="11" width="288" height="201"/>
+                        <color key="backgroundColor" white="0.91007437876292641" alpha="0.30584286971830987" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="c9D-pS-4IH" firstAttribute="top" secondItem="vzp-xx-RDr" secondAttribute="bottom" constant="12" id="2vG-5x-2cU"/>
+                    <constraint firstItem="vzp-xx-RDr" firstAttribute="leading" secondItem="67c-yg-mpT" secondAttribute="leadingMargin" id="Lsa-H7-My6"/>
+                    <constraint firstItem="c9D-pS-4IH" firstAttribute="centerX" secondItem="67c-yg-mpT" secondAttribute="centerX" id="NbG-bj-Wks"/>
+                    <constraint firstItem="c9D-pS-4IH" firstAttribute="bottom" secondItem="67c-yg-mpT" secondAttribute="bottomMargin" id="ZAK-Ph-0UK"/>
+                    <constraint firstItem="vzp-xx-RDr" firstAttribute="top" secondItem="67c-yg-mpT" secondAttribute="topMargin" id="hQi-Wa-dJt"/>
+                    <constraint firstItem="vzp-xx-RDr" firstAttribute="trailing" secondItem="67c-yg-mpT" secondAttribute="trailingMargin" id="tis-Fu-tsK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bigTextView" destination="vzp-xx-RDr" id="G5o-sT-chO"/>
+            </connections>
+            <point key="canvasLocation" x="209" y="344"/>
+        </tableViewCell>
+    </objects>
+</document>
